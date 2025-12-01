@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="pleasework_util_vector_logic_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pleasework_picorv32_axi_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_picorv32_axi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pleasework_blk_mem_gen_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pleasework_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pleasework_vio_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_vio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pleasework_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pleasework_smartconnect_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_smartconnect_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pleasework_proc_sys_reset_0_0_synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/pleasework_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="pleasework_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="pleasework_picorv32_axi_0_0_synth_1"/>
+		<Parent Id="pleasework_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="pleasework_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="pleasework_vio_0_0_synth_1"/>
+		<Parent Id="pleasework_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="pleasework_smartconnect_0_0_synth_1"/>
+		<Parent Id="pleasework_proc_sys_reset_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/ugrad/aldenb/group-work/12.01.25/12.01.25.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="pleasework_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="pleasework_picorv32_axi_0_0_synth_1"/>
+		<Parent Id="pleasework_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="pleasework_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="pleasework_vio_0_0_synth_1"/>
+		<Parent Id="pleasework_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="pleasework_smartconnect_0_0_synth_1"/>
+		<Parent Id="pleasework_proc_sys_reset_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.ignorePathLengthChecks" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+
