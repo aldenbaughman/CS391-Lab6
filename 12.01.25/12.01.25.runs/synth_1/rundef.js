@@ -28,7 +28,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log pleasework_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pleasework_wrapper.tcl" );
+         "-log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl" );
 
 
 

@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.924464",
-   "Default View_TopLeft":"-156,-914",
+   "Default View_TopLeft":"166,-570",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
@@ -14,18 +14,18 @@ preplace inst vio_0 -pg 1 -lvl 3 -x 1290 -y -730 -defaultsOSRD
 preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 150 -y -840 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 1 -x 150 -y -720 -defaultsOSRD
 preplace inst picorv32_axi_0 -pg 1 -lvl 2 -x 790 -y -730 -defaultsOSRD
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 2 480 -260 1110
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 -30 -450 450 -890 1140
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 3 -20 -460 480J -270 1100
-preplace netloc picorv32_axi_0_trap 1 2 1 1150 -790n
+preplace netloc picorv32_axi_0_trap 1 2 1 1130 -790n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 3 -20 -460 500J -270 1080
+preplace netloc util_vector_logic_0_Res 1 1 1 500 -840n
 preplace netloc vio_0_probe_out0 1 0 4 0 -660 300J -900 NJ -900 1430
-preplace netloc util_vector_logic_0_Res 1 1 1 480 -840n
-preplace netloc xlconstant_0_dout 1 1 1 480 -750n
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 0 3 -10 -470 460J -880 1120
+preplace netloc xlconstant_0_dout 1 1 1 500 -750n
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 -30 -450 470 -890 1120
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 2 500 -260 1090
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 2 1 1110 -530n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 2 1 1110 -510n
+preplace netloc picorv32_axi_0_mem_axi 1 0 3 0 -650 490J -870 1090
 preplace netloc smartconnect_0_M00_AXI 1 1 1 300 -560n
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 2 1 1130 -530n
-preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 2 1 1130 -510n
-preplace netloc picorv32_axi_0_mem_axi 1 0 3 0 -650 470J -870 1110
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 0 3 -10 -470 480J -880 1100
 levelinfo -pg 1 -50 150 790 1290 1590
 pagesize -pg 1 -db -bbox -sgen -50 -910 1590 240
 "

@@ -855,6 +855,7 @@ module picorv32 #(
 	end
 `endif
 
+    // add registers here to count instructions
 	always @(posedge clk) begin
 		is_lui_auipc_jal <= |{instr_lui, instr_auipc, instr_jal};
 		is_lui_auipc_jal_jalr_addi_add_sub <= |{instr_lui, instr_auipc, instr_jal, instr_jalr, instr_addi, instr_add, instr_sub};
@@ -871,6 +872,7 @@ module picorv32 #(
 			instr_retirq  <= mem_rdata_latched[6:0] == 7'b0001011 && mem_rdata_latched[31:25] == 7'b0000010 && ENABLE_IRQ;
 			instr_waitirq <= mem_rdata_latched[6:0] == 7'b0001011 && mem_rdata_latched[31:25] == 7'b0000100 && ENABLE_IRQ;
 
+            // check with these conditionals
 			is_beq_bne_blt_bge_bltu_bgeu <= mem_rdata_latched[6:0] == 7'b1100011;
 			is_lb_lh_lw_lbu_lhu          <= mem_rdata_latched[6:0] == 7'b0000011;
 			is_sb_sh_sw                  <= mem_rdata_latched[6:0] == 7'b0100011;
@@ -1489,6 +1491,7 @@ module picorv32 #(
 			end
 
 			cpu_state_fetch: begin
+			// counter here
 				mem_do_rinst <= !decoder_trigger && !do_waitirq;
 				mem_wordsize <= 0;
 
@@ -1852,6 +1855,7 @@ module picorv32 #(
 			end
 
 			cpu_state_stmem: begin
+		
 				if (ENABLE_TRACE)
 					reg_out <= reg_op2;
 				if (!mem_do_prefetch || mem_done) begin
@@ -1868,6 +1872,7 @@ module picorv32 #(
 						end
 						reg_op1 <= reg_op1 + decoded_imm;
 						set_mem_do_wdata = 1;
+						// count store to memory
 					end
 					if (!mem_do_prefetch && mem_done) begin
 						cpu_state <= cpu_state_fetch;
@@ -1896,6 +1901,7 @@ module picorv32 #(
 						end
 						reg_op1 <= reg_op1 + decoded_imm;
 						set_mem_do_rdata = 1;
+						// count load to memory
 					end
 					if (!mem_do_prefetch && mem_done) begin
 						(* parallel_case, full_case *)
