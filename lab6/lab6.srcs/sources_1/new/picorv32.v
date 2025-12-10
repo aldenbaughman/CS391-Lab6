@@ -1480,34 +1480,56 @@ module picorv32 #(
             instr_fetch_counter_reg <= 0;
             stmem_counter_reg <= 0;
             ldmem_counter_reg <= 0;
+        // not end of program
         end else if (!trap) begin
+            // instruction finishes ending and new one is valid
             if (launch_next_insn && dbg_valid_insn) begin
-                case (dbg_insn_opcode[6:0])
+                case (dbg_insn_opcode[6:0]) // check opcode
+                    // R type
                     7'b0110011: r_type_counter_reg <= r_type_counter_reg + 1;
+                    
+                    // I type artihmetic
                     7'b0010011: i_type_counter_reg <= i_type_counter_reg + 1;
+                  
+                    // I type load
                     7'b0000011: i_type_counter_reg <= i_type_counter_reg + 1;
+                    
+                    // JALR (I type)
                     7'b1100111: i_type_counter_reg <= i_type_counter_reg + 1;
+                    
+                    // S type 
                     7'b0100011: s_type_counter_reg <= s_type_counter_reg + 1;
+                    
+                    // B type
                     7'b1100011: b_type_counter_reg <= b_type_counter_reg + 1;
+                    
+                    // J type
                     7'b1101111: j_type_counter_reg <= j_type_counter_reg + 1;
+                    
+                    // U types
                     7'b0110111: u_type_counter_reg <= u_type_counter_reg + 1;
                     7'b0010111: u_type_counter_reg <= u_type_counter_reg + 1;
+                    
+                    // ebreak (I type
                     7'b1110011: i_type_counter_reg <= i_type_counter_reg + 1;
                     default: begin end
                 endcase
             end
             
             // Count instruction fetches
+            // check if reading instruction is successful and finished
             if (mem_do_rinst && mem_done) begin
                 instr_fetch_counter_reg <= instr_fetch_counter_reg + 1;
             end
             
             // Count data store operations
+            // check if in stmem state and if successful 
             if (cpu_state == cpu_state_stmem && mem_done && mem_do_wdata) begin
                 stmem_counter_reg <= stmem_counter_reg + 1;
             end
             
             // Count data load operations
+            // check if in ldmem state and if successful 
             if (cpu_state == cpu_state_ldmem && mem_done && mem_do_rdata) begin
                 ldmem_counter_reg <= ldmem_counter_reg + 1;
             end
@@ -1634,7 +1656,6 @@ module picorv32 #(
 					`debug($display("-- %-0t", $time);)
 					irq_delay <= irq_active;
 					reg_next_pc <= current_pc + (compressed_instr ? 2 : 4);
-					instr_fetch_counter_reg <= instr_fetch_counter_reg + 1;
 					if (ENABLE_TRACE)
 						latched_trace <= 1;
 					if (ENABLE_COUNTERS) begin

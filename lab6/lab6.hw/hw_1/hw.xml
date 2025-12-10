@@ -27,6 +27,9 @@
     <Object name="design_1_i/picorv32_axi_0_u_type_counter[31:0]" gui_info="hw_vios/hw_vio_1=10"/>
     <Object name="design_1_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_1=1"/>
   </ObjectList>
+  <ObjectList object_type="hw_vio" gui_info="">
+    <Object name="hw_vio_1" gui_info="hw_vios/hw_vio_1/TablePreference=5	737	Name	0	2147483647	15	375	375	Value	1	2147483647	15	137	137	Activity	2	2147483647	15	71	71	Direction	3	2147483647	15	84	84	VIO	4	2147483647	15	70	70			1	6	1	Name	Value	Activity	Direction	VIO"/>
+  </ObjectList>
   <probeset name="hw project" active="false">
     <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">

@@ -3,8 +3,8 @@
 # SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Tue Dec  9 16:32:28 2025
-# Process ID         : 49869
+# Start of session at: Tue Dec  9 19:25:48 2025
+# Process ID         : 49806
 # Current directory  : /home/ugrad/yc3146/lab6/lab6.runs/design_1_picorv32_axi_0_0_synth_1
 # Command line       : vivado -log design_1_picorv32_axi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_picorv32_axi_0_0.tcl
 # Log file           : /home/ugrad/yc3146/lab6/lab6.runs/design_1_picorv32_axi_0_0_synth_1/design_1_picorv32_axi_0_0.vds
@@ -13,13 +13,13 @@
 # Platform           : unknown
 # Operating System   : unknown
 # Processor Detail   : Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
-# CPU Frequency      : 3292.453 MHz
+# CPU Frequency      : 3616.983 MHz
 # CPU Physical cores : 4
 # CPU Logical cores  : 4
 # Host memory        : 33287 MB
 # Swap memory        : 16844 MB
 # Total Virtual      : 50132 MB
-# Available Virtual  : 44834 MB
+# Available Virtual  : 42526 MB
 #-----------------------------------------------------------
 source design_1_picorv32_axi_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -32,12 +32,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 49959
+INFO: [Synth 8-7075] Helper process launched with PID 49901
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2847.480 ; gain = 148.859 ; free physical = 20662 ; free virtual = 41022
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2847.480 ; gain = 148.859 ; free physical = 17229 ; free virtual = 38808
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_picorv32_axi_0_0' [/home/ugrad/yc3146/lab6/lab6.gen/sources_1/bd/design_1/ip/design_1_picorv32_axi_0_0/synth/design_1_picorv32_axi_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'picorv32_axi' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2594]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2615]
 	Parameter ENABLE_COUNTERS bound to: 1'b1 
 	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
 	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
@@ -63,8 +63,8 @@ INFO: [Synth 8-6157] synthesizing module 'picorv32_axi' [/home/ugrad/yc3146/lab6
 	Parameter PROGADDR_RESET bound to: -2147483648 - type: integer 
 	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
 	Parameter STACKADDR bound to: -2147024896 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'picorv32_axi_adapter' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2828]
-INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi_adapter' (0#1) [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2828]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_axi_adapter' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2849]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi_adapter' (0#1) [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2849]
 INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:62]
 	Parameter ENABLE_COUNTERS bound to: 1'b1 
 	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
@@ -94,21 +94,21 @@ INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/ugrad/yc3146/lab6/lab
 WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1301]
 WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1347]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1347]
-WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1573]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1573]
-WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1660]
-WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1660]
-WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1660]
-WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1660]
-WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1660]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1595]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1595]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1681]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1681]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1681]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1681]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1681]
 INFO: [Synth 8-6155] done synthesizing module 'picorv32' (0#1) [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:62]
-WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2762]
-WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2762]
-WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2762]
-WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2762]
-WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2762]
-WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 36 connections declared, but only 31 given [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2762]
-INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi' (0#1) [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2594]
+WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2783]
+WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2783]
+WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2783]
+WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2783]
+WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2783]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 36 connections declared, but only 31 given [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2783]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_axi' (0#1) [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2615]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_picorv32_axi_0_0' (0#1) [/home/ugrad/yc3146/lab6/lab6.gen/sources_1/bd/design_1/ip/design_1_picorv32_axi_0_0/synth/design_1_picorv32_axi_0_0.v:53]
 WARNING: [Synth 8-6014] Unused sequential element mem_la_firstword_reg_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:425]
 WARNING: [Synth 8-6014] Unused sequential element last_mem_valid_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:426]
@@ -136,18 +136,18 @@ WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_reg was removed.  [
 WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1451]
 WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_valid_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1452]
 WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_valid_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1453]
-WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1516]
-WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1541]
-WARNING: [Synth 8-6014] Unused sequential element irq_active_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1547]
-WARNING: [Synth 8-6014] Unused sequential element irq_delay_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1548]
-WARNING: [Synth 8-6014] Unused sequential element irq_mask_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1549]
-WARNING: [Synth 8-6014] Unused sequential element irq_state_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1551]
-WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1553]
-WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1571]
-WARNING: [Synth 8-6014] Unused sequential element irq_pending_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2040]
-WARNING: [Synth 8-6014] Unused sequential element trace_valid_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1528]
+WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1538]
+WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1563]
+WARNING: [Synth 8-6014] Unused sequential element irq_active_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1569]
+WARNING: [Synth 8-6014] Unused sequential element irq_delay_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1570]
+WARNING: [Synth 8-6014] Unused sequential element irq_mask_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1571]
+WARNING: [Synth 8-6014] Unused sequential element irq_state_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1573]
+WARNING: [Synth 8-6014] Unused sequential element timer_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1575]
+WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1593]
+WARNING: [Synth 8-6014] Unused sequential element irq_pending_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:2061]
+WARNING: [Synth 8-6014] Unused sequential element trace_valid_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1550]
 WARNING: [Synth 8-6014] Unused sequential element instr_ecall_ebreak_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1119]
-WARNING: [Synth 8-6014] Unused sequential element pcpi_timeout_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1546]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_timeout_reg was removed.  [/home/ugrad/yc3146/lab6/lab6.srcs/sources_1/new/picorv32.v:1568]
 WARNING: [Synth 8-7129] Port pcpi_wr in module picorv32 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port pcpi_rd[31] in module picorv32 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port pcpi_rd[30] in module picorv32 is either unconnected or has no load
@@ -216,32 +216,32 @@ WARNING: [Synth 8-7129] Port irq[2] in module picorv32 is either unconnected or 
 WARNING: [Synth 8-7129] Port irq[1] in module picorv32 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port irq[0] in module picorv32 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2938.449 ; gain = 239.828 ; free physical = 20548 ; free virtual = 40909
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2938.449 ; gain = 239.828 ; free physical = 17120 ; free virtual = 38706
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2938.449 ; gain = 239.828 ; free physical = 20578 ; free virtual = 40938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2941.418 ; gain = 242.797 ; free physical = 17122 ; free virtual = 38710
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2938.449 ; gain = 239.828 ; free physical = 20578 ; free virtual = 40938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2941.418 ; gain = 242.797 ; free physical = 17122 ; free virtual = 38710
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2938.449 ; gain = 0.000 ; free physical = 20578 ; free virtual = 40938
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2941.418 ; gain = 0.000 ; free physical = 17122 ; free virtual = 38710
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3031.102 ; gain = 0.000 ; free physical = 20601 ; free virtual = 40962
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3030.406 ; gain = 0.000 ; free physical = 17121 ; free virtual = 38701
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3031.137 ; gain = 0.000 ; free physical = 20598 ; free virtual = 40959
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3030.441 ; gain = 0.000 ; free physical = 17121 ; free virtual = 38702
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3031.137 ; gain = 332.516 ; free physical = 20581 ; free virtual = 40941
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3030.441 ; gain = 331.820 ; free physical = 17104 ; free virtual = 38692
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -249,13 +249,13 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3039.105 ; gain = 340.484 ; free physical = 20581 ; free virtual = 40941
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.410 ; gain = 339.789 ; free physical = 17104 ; free virtual = 38692
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3039.105 ; gain = 340.484 ; free physical = 20581 ; free virtual = 40941
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.410 ; gain = 339.789 ; free physical = 17104 ; free virtual = 38692
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'mem_state_reg' in module 'picorv32'
 INFO: [Synth 8-6904] The RAM "picorv32:/cpuregs_reg" of size (depth=32 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
@@ -269,7 +269,7 @@ INFO: [Synth 8-6904] The RAM "picorv32:/cpuregs_reg" of size (depth=32 x width=3
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'mem_state_reg' using encoding 'sequential' in module 'picorv32'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3039.105 ; gain = 340.484 ; free physical = 20569 ; free virtual = 40930
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.410 ; gain = 339.789 ; free physical = 17109 ; free virtual = 38690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -308,7 +308,7 @@ Detailed RTL Component Info :
 	   2 Input    3 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 22    
+	   2 Input    1 Bit        Muxes := 20    
 	   7 Input    1 Bit        Muxes := 3     
 	   3 Input    1 Bit        Muxes := 3     
 	   4 Input    1 Bit        Muxes := 5     
@@ -370,7 +370,7 @@ WARNING: [Synth 8-7129] Port pcpi_rd[0] in module picorv32 is either unconnected
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6904] The RAM "\inst/picorv32_core/cpuregs_reg " of size (depth=32 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 3055.113 ; gain = 356.492 ; free physical = 20511 ; free virtual = 40873
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 3054.418 ; gain = 355.797 ; free physical = 17067 ; free virtual = 38649
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -391,13 +391,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 3660.973 ; gain = 962.352 ; free physical = 19980 ; free virtual = 40341
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3660.277 ; gain = 961.656 ; free physical = 16551 ; free virtual = 38133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3661.973 ; gain = 963.352 ; free physical = 19978 ; free virtual = 40339
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3662.277 ; gain = 963.656 ; free physical = 16549 ; free virtual = 38131
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -417,7 +417,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3691.020 ; gain = 992.398 ; free physical = 19952 ; free virtual = 40314
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3690.324 ; gain = 991.703 ; free physical = 16522 ; free virtual = 38104
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -435,37 +435,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40172
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16390 ; free virtual = 37972
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40172
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16390 ; free virtual = 37972
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40171
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16386 ; free virtual = 37968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40171
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16386 ; free virtual = 37968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40171
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16386 ; free virtual = 37968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40171
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16386 ; free virtual = 37968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -482,11 +482,11 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |CARRY8   |    78|
-|2     |LUT1     |    13|
-|3     |LUT2     |   139|
+|2     |LUT1     |    14|
+|3     |LUT2     |   108|
 |4     |LUT3     |   100|
 |5     |LUT4     |   275|
-|6     |LUT5     |   167|
+|6     |LUT5     |   166|
 |7     |LUT6     |   391|
 |8     |RAM32M   |     2|
 |9     |RAM32M16 |     4|
@@ -494,33 +494,33 @@ Report Cell Usage:
 |11    |FDSE     |    20|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40171
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16386 ; free virtual = 37968
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3845.832 ; gain = 1054.523 ; free physical = 19810 ; free virtual = 40171
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3845.832 ; gain = 1147.211 ; free physical = 19810 ; free virtual = 40171
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 3846.137 ; gain = 1058.492 ; free physical = 16386 ; free virtual = 37967
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3846.137 ; gain = 1147.516 ; free physical = 16386 ; free virtual = 37967
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3845.832 ; gain = 0.000 ; free physical = 19971 ; free virtual = 40333
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.137 ; gain = 0.000 ; free physical = 16544 ; free virtual = 38134
 INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'design_1_picorv32_axi_0_0' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3845.832 ; gain = 0.000 ; free physical = 19971 ; free virtual = 40332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3846.137 ; gain = 0.000 ; free physical = 16554 ; free virtual = 38136
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 4 instances
 
-Synth Design complete | Checksum: 3c76011a
+Synth Design complete | Checksum: d33565a0
 INFO: [Common 17-83] Releasing license: Synthesis
 40 Infos, 154 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:43 . Memory (MB): peak = 3845.832 ; gain = 2080.945 ; free physical = 19973 ; free virtual = 40335
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2753.650; main = 2658.324; forked = 240.999
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5279.688; main = 3796.160; forked = 1586.664
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:43 . Memory (MB): peak = 3846.137 ; gain = 2081.250 ; free physical = 16556 ; free virtual = 38137
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2790.405; main = 2655.236; forked = 240.688
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5318.992; main = 3796.465; forked = 1586.664
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3845.832 ; gain = 0.000 ; free physical = 19970 ; free virtual = 40332
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3846.137 ; gain = 0.000 ; free physical = 16552 ; free virtual = 38134
 INFO: [Common 17-1381] The checkpoint '/home/ugrad/yc3146/lab6/lab6.runs/design_1_picorv32_axi_0_0_synth_1/design_1_picorv32_axi_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_picorv32_axi_0_0_utilization_synth.rpt -pb design_1_picorv32_axi_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 16:33:19 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 19:26:38 2025...

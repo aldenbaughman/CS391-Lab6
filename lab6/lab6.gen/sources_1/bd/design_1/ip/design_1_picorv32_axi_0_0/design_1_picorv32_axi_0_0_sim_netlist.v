@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-// Date        : Tue Dec  9 16:33:18 2025
+// Date        : Tue Dec  9 19:26:38 2025
 // Host        : cs730-test3.bu.edu running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim
 //               /home/ugrad/yc3146/lab6/lab6.gen/sources_1/bd/design_1/ip/design_1_picorv32_axi_0_0/design_1_picorv32_axi_0_0_sim_netlist.v
@@ -1337,39 +1337,8 @@ module design_1_picorv32_axi_0_0_picorv32
   wire instr_fence0;
   wire instr_fence_i_2_n_0;
   wire [31:0]instr_fetch_counter;
-  wire \instr_fetch_counter_reg[15]_i_2_n_0 ;
-  wire \instr_fetch_counter_reg[15]_i_3_n_0 ;
-  wire \instr_fetch_counter_reg[15]_i_4_n_0 ;
-  wire \instr_fetch_counter_reg[15]_i_5_n_0 ;
-  wire \instr_fetch_counter_reg[15]_i_6_n_0 ;
-  wire \instr_fetch_counter_reg[15]_i_7_n_0 ;
-  wire \instr_fetch_counter_reg[15]_i_8_n_0 ;
-  wire \instr_fetch_counter_reg[15]_i_9_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_2_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_3_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_4_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_5_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_6_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_7_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_8_n_0 ;
-  wire \instr_fetch_counter_reg[23]_i_9_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_10_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_1_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_3_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_4_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_5_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_6_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_7_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_8_n_0 ;
-  wire \instr_fetch_counter_reg[31]_i_9_n_0 ;
+  wire instr_fetch_counter_reg;
   wire \instr_fetch_counter_reg[7]_i_2_n_0 ;
-  wire \instr_fetch_counter_reg[7]_i_3_n_0 ;
-  wire \instr_fetch_counter_reg[7]_i_4_n_0 ;
-  wire \instr_fetch_counter_reg[7]_i_5_n_0 ;
-  wire \instr_fetch_counter_reg[7]_i_6_n_0 ;
-  wire \instr_fetch_counter_reg[7]_i_7_n_0 ;
-  wire \instr_fetch_counter_reg[7]_i_8_n_0 ;
-  wire \instr_fetch_counter_reg[7]_i_9_n_0 ;
   wire \instr_fetch_counter_reg_reg[15]_i_1_n_0 ;
   wire \instr_fetch_counter_reg_reg[15]_i_1_n_1 ;
   wire \instr_fetch_counter_reg_reg[15]_i_1_n_10 ;
@@ -8136,248 +8105,58 @@ module design_1_picorv32_axi_0_0_picorv32
         .Q(instr_fence),
         .R(trap_i_1_n_0));
   LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_2 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[15]),
-        .O(\instr_fetch_counter_reg[15]_i_2_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_3 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[14]),
-        .O(\instr_fetch_counter_reg[15]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_4 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[13]),
-        .O(\instr_fetch_counter_reg[15]_i_4_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_5 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[12]),
-        .O(\instr_fetch_counter_reg[15]_i_5_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_6 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[11]),
-        .O(\instr_fetch_counter_reg[15]_i_6_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_7 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[10]),
-        .O(\instr_fetch_counter_reg[15]_i_7_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_8 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[9]),
-        .O(\instr_fetch_counter_reg[15]_i_8_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[15]_i_9 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[8]),
-        .O(\instr_fetch_counter_reg[15]_i_9_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_2 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[23]),
-        .O(\instr_fetch_counter_reg[23]_i_2_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_3 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[22]),
-        .O(\instr_fetch_counter_reg[23]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_4 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[21]),
-        .O(\instr_fetch_counter_reg[23]_i_4_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_5 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[20]),
-        .O(\instr_fetch_counter_reg[23]_i_5_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_6 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[19]),
-        .O(\instr_fetch_counter_reg[23]_i_6_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_7 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[18]),
-        .O(\instr_fetch_counter_reg[23]_i_7_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_8 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[17]),
-        .O(\instr_fetch_counter_reg[23]_i_8_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[23]_i_9 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[16]),
-        .O(\instr_fetch_counter_reg[23]_i_9_n_0 ));
-  LUT5 #(
-    .INIT(32'hD5FFD5D5)) 
+    .INIT(4'h2)) 
     \instr_fetch_counter_reg[31]_i_1 
-       (.I0(resetn),
-        .I1(\cpu_state_reg[6]_0 [3]),
-        .I2(decoder_trigger_reg_0),
-        .I3(trap_reg_0),
-        .I4(E),
-        .O(\instr_fetch_counter_reg[31]_i_1_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_10 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[24]),
-        .O(\instr_fetch_counter_reg[31]_i_10_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_3 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[31]),
-        .O(\instr_fetch_counter_reg[31]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_4 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[30]),
-        .O(\instr_fetch_counter_reg[31]_i_4_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_5 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[29]),
-        .O(\instr_fetch_counter_reg[31]_i_5_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_6 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[28]),
-        .O(\instr_fetch_counter_reg[31]_i_6_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_7 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[27]),
-        .O(\instr_fetch_counter_reg[31]_i_7_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_8 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[26]),
-        .O(\instr_fetch_counter_reg[31]_i_8_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[31]_i_9 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[25]),
-        .O(\instr_fetch_counter_reg[31]_i_9_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
+       (.I0(E),
+        .I1(trap_reg_0),
+        .O(instr_fetch_counter_reg));
+  LUT1 #(
+    .INIT(2'h1)) 
     \instr_fetch_counter_reg[7]_i_2 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[7]),
-        .O(\instr_fetch_counter_reg[7]_i_2_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[7]_i_3 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[6]),
-        .O(\instr_fetch_counter_reg[7]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[7]_i_4 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[5]),
-        .O(\instr_fetch_counter_reg[7]_i_4_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[7]_i_5 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[4]),
-        .O(\instr_fetch_counter_reg[7]_i_5_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[7]_i_6 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[3]),
-        .O(\instr_fetch_counter_reg[7]_i_6_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[7]_i_7 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[2]),
-        .O(\instr_fetch_counter_reg[7]_i_7_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \instr_fetch_counter_reg[7]_i_8 
-       (.I0(resetn),
-        .I1(instr_fetch_counter[1]),
-        .O(\instr_fetch_counter_reg[7]_i_8_n_0 ));
-  LUT2 #(
-    .INIT(4'h4)) 
-    \instr_fetch_counter_reg[7]_i_9 
        (.I0(instr_fetch_counter[0]),
-        .I1(resetn),
-        .O(\instr_fetch_counter_reg[7]_i_9_n_0 ));
+        .O(\instr_fetch_counter_reg[7]_i_2_n_0 ));
   FDRE \instr_fetch_counter_reg_reg[0] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_15 ),
         .Q(instr_fetch_counter[0]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[10] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_13 ),
         .Q(instr_fetch_counter[10]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[11] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_12 ),
         .Q(instr_fetch_counter[11]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[12] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_11 ),
         .Q(instr_fetch_counter[12]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[13] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_10 ),
         .Q(instr_fetch_counter[13]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[14] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_9 ),
         .Q(instr_fetch_counter[14]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[15] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_8 ),
         .Q(instr_fetch_counter[15]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   (* ADDER_THRESHOLD = "16" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY8 \instr_fetch_counter_reg_reg[15]_i_1 
@@ -8386,61 +8165,61 @@ module design_1_picorv32_axi_0_0_picorv32
         .CO({\instr_fetch_counter_reg_reg[15]_i_1_n_0 ,\instr_fetch_counter_reg_reg[15]_i_1_n_1 ,\instr_fetch_counter_reg_reg[15]_i_1_n_2 ,\instr_fetch_counter_reg_reg[15]_i_1_n_3 ,\instr_fetch_counter_reg_reg[15]_i_1_n_4 ,\instr_fetch_counter_reg_reg[15]_i_1_n_5 ,\instr_fetch_counter_reg_reg[15]_i_1_n_6 ,\instr_fetch_counter_reg_reg[15]_i_1_n_7 }),
         .DI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .O({\instr_fetch_counter_reg_reg[15]_i_1_n_8 ,\instr_fetch_counter_reg_reg[15]_i_1_n_9 ,\instr_fetch_counter_reg_reg[15]_i_1_n_10 ,\instr_fetch_counter_reg_reg[15]_i_1_n_11 ,\instr_fetch_counter_reg_reg[15]_i_1_n_12 ,\instr_fetch_counter_reg_reg[15]_i_1_n_13 ,\instr_fetch_counter_reg_reg[15]_i_1_n_14 ,\instr_fetch_counter_reg_reg[15]_i_1_n_15 }),
-        .S({\instr_fetch_counter_reg[15]_i_2_n_0 ,\instr_fetch_counter_reg[15]_i_3_n_0 ,\instr_fetch_counter_reg[15]_i_4_n_0 ,\instr_fetch_counter_reg[15]_i_5_n_0 ,\instr_fetch_counter_reg[15]_i_6_n_0 ,\instr_fetch_counter_reg[15]_i_7_n_0 ,\instr_fetch_counter_reg[15]_i_8_n_0 ,\instr_fetch_counter_reg[15]_i_9_n_0 }));
+        .S(instr_fetch_counter[15:8]));
   FDRE \instr_fetch_counter_reg_reg[16] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_15 ),
         .Q(instr_fetch_counter[16]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[17] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_14 ),
         .Q(instr_fetch_counter[17]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[18] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_13 ),
         .Q(instr_fetch_counter[18]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[19] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_12 ),
         .Q(instr_fetch_counter[19]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[1] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_14 ),
         .Q(instr_fetch_counter[1]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[20] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_11 ),
         .Q(instr_fetch_counter[20]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[21] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_10 ),
         .Q(instr_fetch_counter[21]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[22] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_9 ),
         .Q(instr_fetch_counter[22]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[23] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[23]_i_1_n_8 ),
         .Q(instr_fetch_counter[23]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   (* ADDER_THRESHOLD = "16" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY8 \instr_fetch_counter_reg_reg[23]_i_1 
@@ -8449,61 +8228,61 @@ module design_1_picorv32_axi_0_0_picorv32
         .CO({\instr_fetch_counter_reg_reg[23]_i_1_n_0 ,\instr_fetch_counter_reg_reg[23]_i_1_n_1 ,\instr_fetch_counter_reg_reg[23]_i_1_n_2 ,\instr_fetch_counter_reg_reg[23]_i_1_n_3 ,\instr_fetch_counter_reg_reg[23]_i_1_n_4 ,\instr_fetch_counter_reg_reg[23]_i_1_n_5 ,\instr_fetch_counter_reg_reg[23]_i_1_n_6 ,\instr_fetch_counter_reg_reg[23]_i_1_n_7 }),
         .DI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .O({\instr_fetch_counter_reg_reg[23]_i_1_n_8 ,\instr_fetch_counter_reg_reg[23]_i_1_n_9 ,\instr_fetch_counter_reg_reg[23]_i_1_n_10 ,\instr_fetch_counter_reg_reg[23]_i_1_n_11 ,\instr_fetch_counter_reg_reg[23]_i_1_n_12 ,\instr_fetch_counter_reg_reg[23]_i_1_n_13 ,\instr_fetch_counter_reg_reg[23]_i_1_n_14 ,\instr_fetch_counter_reg_reg[23]_i_1_n_15 }),
-        .S({\instr_fetch_counter_reg[23]_i_2_n_0 ,\instr_fetch_counter_reg[23]_i_3_n_0 ,\instr_fetch_counter_reg[23]_i_4_n_0 ,\instr_fetch_counter_reg[23]_i_5_n_0 ,\instr_fetch_counter_reg[23]_i_6_n_0 ,\instr_fetch_counter_reg[23]_i_7_n_0 ,\instr_fetch_counter_reg[23]_i_8_n_0 ,\instr_fetch_counter_reg[23]_i_9_n_0 }));
+        .S(instr_fetch_counter[23:16]));
   FDRE \instr_fetch_counter_reg_reg[24] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_15 ),
         .Q(instr_fetch_counter[24]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[25] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_14 ),
         .Q(instr_fetch_counter[25]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[26] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_13 ),
         .Q(instr_fetch_counter[26]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[27] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_12 ),
         .Q(instr_fetch_counter[27]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[28] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_11 ),
         .Q(instr_fetch_counter[28]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[29] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_10 ),
         .Q(instr_fetch_counter[29]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[2] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_13 ),
         .Q(instr_fetch_counter[2]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[30] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_9 ),
         .Q(instr_fetch_counter[30]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[31] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[31]_i_2_n_8 ),
         .Q(instr_fetch_counter[31]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   (* ADDER_THRESHOLD = "16" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY8 \instr_fetch_counter_reg_reg[31]_i_2 
@@ -8512,58 +8291,58 @@ module design_1_picorv32_axi_0_0_picorv32
         .CO({\NLW_instr_fetch_counter_reg_reg[31]_i_2_CO_UNCONNECTED [7],\instr_fetch_counter_reg_reg[31]_i_2_n_1 ,\instr_fetch_counter_reg_reg[31]_i_2_n_2 ,\instr_fetch_counter_reg_reg[31]_i_2_n_3 ,\instr_fetch_counter_reg_reg[31]_i_2_n_4 ,\instr_fetch_counter_reg_reg[31]_i_2_n_5 ,\instr_fetch_counter_reg_reg[31]_i_2_n_6 ,\instr_fetch_counter_reg_reg[31]_i_2_n_7 }),
         .DI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .O({\instr_fetch_counter_reg_reg[31]_i_2_n_8 ,\instr_fetch_counter_reg_reg[31]_i_2_n_9 ,\instr_fetch_counter_reg_reg[31]_i_2_n_10 ,\instr_fetch_counter_reg_reg[31]_i_2_n_11 ,\instr_fetch_counter_reg_reg[31]_i_2_n_12 ,\instr_fetch_counter_reg_reg[31]_i_2_n_13 ,\instr_fetch_counter_reg_reg[31]_i_2_n_14 ,\instr_fetch_counter_reg_reg[31]_i_2_n_15 }),
-        .S({\instr_fetch_counter_reg[31]_i_3_n_0 ,\instr_fetch_counter_reg[31]_i_4_n_0 ,\instr_fetch_counter_reg[31]_i_5_n_0 ,\instr_fetch_counter_reg[31]_i_6_n_0 ,\instr_fetch_counter_reg[31]_i_7_n_0 ,\instr_fetch_counter_reg[31]_i_8_n_0 ,\instr_fetch_counter_reg[31]_i_9_n_0 ,\instr_fetch_counter_reg[31]_i_10_n_0 }));
+        .S(instr_fetch_counter[31:24]));
   FDRE \instr_fetch_counter_reg_reg[3] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_12 ),
         .Q(instr_fetch_counter[3]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[4] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_11 ),
         .Q(instr_fetch_counter[4]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[5] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_10 ),
         .Q(instr_fetch_counter[5]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[6] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_9 ),
         .Q(instr_fetch_counter[6]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[7] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[7]_i_1_n_8 ),
         .Q(instr_fetch_counter[7]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   (* ADDER_THRESHOLD = "16" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY8 \instr_fetch_counter_reg_reg[7]_i_1 
        (.CI(1'b0),
         .CI_TOP(1'b0),
         .CO({\instr_fetch_counter_reg_reg[7]_i_1_n_0 ,\instr_fetch_counter_reg_reg[7]_i_1_n_1 ,\instr_fetch_counter_reg_reg[7]_i_1_n_2 ,\instr_fetch_counter_reg_reg[7]_i_1_n_3 ,\instr_fetch_counter_reg_reg[7]_i_1_n_4 ,\instr_fetch_counter_reg_reg[7]_i_1_n_5 ,\instr_fetch_counter_reg_reg[7]_i_1_n_6 ,\instr_fetch_counter_reg_reg[7]_i_1_n_7 }),
-        .DI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,resetn}),
+        .DI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1}),
         .O({\instr_fetch_counter_reg_reg[7]_i_1_n_8 ,\instr_fetch_counter_reg_reg[7]_i_1_n_9 ,\instr_fetch_counter_reg_reg[7]_i_1_n_10 ,\instr_fetch_counter_reg_reg[7]_i_1_n_11 ,\instr_fetch_counter_reg_reg[7]_i_1_n_12 ,\instr_fetch_counter_reg_reg[7]_i_1_n_13 ,\instr_fetch_counter_reg_reg[7]_i_1_n_14 ,\instr_fetch_counter_reg_reg[7]_i_1_n_15 }),
-        .S({\instr_fetch_counter_reg[7]_i_2_n_0 ,\instr_fetch_counter_reg[7]_i_3_n_0 ,\instr_fetch_counter_reg[7]_i_4_n_0 ,\instr_fetch_counter_reg[7]_i_5_n_0 ,\instr_fetch_counter_reg[7]_i_6_n_0 ,\instr_fetch_counter_reg[7]_i_7_n_0 ,\instr_fetch_counter_reg[7]_i_8_n_0 ,\instr_fetch_counter_reg[7]_i_9_n_0 }));
+        .S({instr_fetch_counter[7:1],\instr_fetch_counter_reg[7]_i_2_n_0 }));
   FDRE \instr_fetch_counter_reg_reg[8] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_15 ),
         .Q(instr_fetch_counter[8]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   FDRE \instr_fetch_counter_reg_reg[9] 
        (.C(clk),
-        .CE(\instr_fetch_counter_reg[31]_i_1_n_0 ),
+        .CE(instr_fetch_counter_reg),
         .D(\instr_fetch_counter_reg_reg[15]_i_1_n_14 ),
         .Q(instr_fetch_counter[9]),
-        .R(1'b0));
+        .R(trap_i_1_n_0));
   LUT2 #(
     .INIT(4'h8)) 
     instr_jal_i_1

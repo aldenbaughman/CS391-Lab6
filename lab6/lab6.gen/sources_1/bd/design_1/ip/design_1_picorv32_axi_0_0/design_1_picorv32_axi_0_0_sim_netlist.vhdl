@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
--- Date        : Tue Dec  9 16:33:19 2025
+-- Date        : Tue Dec  9 19:26:38 2025
 -- Host        : cs730-test3.bu.edu running 64-bit unknown
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/ugrad/yc3146/lab6/lab6.gen/sources_1/bd/design_1/ip/design_1_picorv32_axi_0_0/design_1_picorv32_axi_0_0_sim_netlist.vhdl
@@ -981,39 +981,8 @@ architecture STRUCTURE of design_1_picorv32_axi_0_0_picorv32 is
   signal instr_fence0 : STD_LOGIC;
   signal instr_fence_i_2_n_0 : STD_LOGIC;
   signal \^instr_fetch_counter\ : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal \instr_fetch_counter_reg[15]_i_2_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[15]_i_3_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[15]_i_4_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[15]_i_5_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[15]_i_6_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[15]_i_7_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[15]_i_8_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[15]_i_9_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_2_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_3_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_4_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_5_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_6_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_7_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_8_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[23]_i_9_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_10_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_1_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_3_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_4_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_5_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_6_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_7_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_8_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[31]_i_9_n_0\ : STD_LOGIC;
+  signal instr_fetch_counter_reg : STD_LOGIC;
   signal \instr_fetch_counter_reg[7]_i_2_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[7]_i_3_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[7]_i_4_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[7]_i_5_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[7]_i_6_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[7]_i_7_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[7]_i_8_n_0\ : STD_LOGIC;
-  signal \instr_fetch_counter_reg[7]_i_9_n_0\ : STD_LOGIC;
   signal \instr_fetch_counter_reg_reg[15]_i_1_n_0\ : STD_LOGIC;
   signal \instr_fetch_counter_reg_reg[15]_i_1_n_1\ : STD_LOGIC;
   signal \instr_fetch_counter_reg_reg[15]_i_1_n_10\ : STD_LOGIC;
@@ -10405,361 +10374,78 @@ instr_fence_reg: unisim.vcomponents.FDRE
       Q => instr_fence,
       R => trap_i_1_n_0
     );
-\instr_fetch_counter_reg[15]_i_2\: unisim.vcomponents.LUT2
+\instr_fetch_counter_reg[31]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"8"
+      INIT => X"2"
     )
         port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(15),
-      O => \instr_fetch_counter_reg[15]_i_2_n_0\
+      I0 => \^e\(0),
+      I1 => \^trap_reg_0\,
+      O => instr_fetch_counter_reg
     );
-\instr_fetch_counter_reg[15]_i_3\: unisim.vcomponents.LUT2
+\instr_fetch_counter_reg[7]_i_2\: unisim.vcomponents.LUT1
     generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(14),
-      O => \instr_fetch_counter_reg[15]_i_3_n_0\
-    );
-\instr_fetch_counter_reg[15]_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(13),
-      O => \instr_fetch_counter_reg[15]_i_4_n_0\
-    );
-\instr_fetch_counter_reg[15]_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(12),
-      O => \instr_fetch_counter_reg[15]_i_5_n_0\
-    );
-\instr_fetch_counter_reg[15]_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(11),
-      O => \instr_fetch_counter_reg[15]_i_6_n_0\
-    );
-\instr_fetch_counter_reg[15]_i_7\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(10),
-      O => \instr_fetch_counter_reg[15]_i_7_n_0\
-    );
-\instr_fetch_counter_reg[15]_i_8\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(9),
-      O => \instr_fetch_counter_reg[15]_i_8_n_0\
-    );
-\instr_fetch_counter_reg[15]_i_9\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(8),
-      O => \instr_fetch_counter_reg[15]_i_9_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(23),
-      O => \instr_fetch_counter_reg[23]_i_2_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(22),
-      O => \instr_fetch_counter_reg[23]_i_3_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(21),
-      O => \instr_fetch_counter_reg[23]_i_4_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(20),
-      O => \instr_fetch_counter_reg[23]_i_5_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(19),
-      O => \instr_fetch_counter_reg[23]_i_6_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_7\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(18),
-      O => \instr_fetch_counter_reg[23]_i_7_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_8\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(17),
-      O => \instr_fetch_counter_reg[23]_i_8_n_0\
-    );
-\instr_fetch_counter_reg[23]_i_9\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(16),
-      O => \instr_fetch_counter_reg[23]_i_9_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"D5FFD5D5"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^cpu_state_reg[6]_0\(3),
-      I2 => \^decoder_trigger_reg_0\,
-      I3 => \^trap_reg_0\,
-      I4 => \^e\(0),
-      O => \instr_fetch_counter_reg[31]_i_1_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_10\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(24),
-      O => \instr_fetch_counter_reg[31]_i_10_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(31),
-      O => \instr_fetch_counter_reg[31]_i_3_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(30),
-      O => \instr_fetch_counter_reg[31]_i_4_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(29),
-      O => \instr_fetch_counter_reg[31]_i_5_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(28),
-      O => \instr_fetch_counter_reg[31]_i_6_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_7\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(27),
-      O => \instr_fetch_counter_reg[31]_i_7_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_8\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(26),
-      O => \instr_fetch_counter_reg[31]_i_8_n_0\
-    );
-\instr_fetch_counter_reg[31]_i_9\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(25),
-      O => \instr_fetch_counter_reg[31]_i_9_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(7),
-      O => \instr_fetch_counter_reg[7]_i_2_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_3\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(6),
-      O => \instr_fetch_counter_reg[7]_i_3_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_4\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(5),
-      O => \instr_fetch_counter_reg[7]_i_4_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(4),
-      O => \instr_fetch_counter_reg[7]_i_5_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(3),
-      O => \instr_fetch_counter_reg[7]_i_6_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_7\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(2),
-      O => \instr_fetch_counter_reg[7]_i_7_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_8\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => resetn,
-      I1 => \^instr_fetch_counter\(1),
-      O => \instr_fetch_counter_reg[7]_i_8_n_0\
-    );
-\instr_fetch_counter_reg[7]_i_9\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"4"
+      INIT => X"1"
     )
         port map (
       I0 => \^instr_fetch_counter\(0),
-      I1 => resetn,
-      O => \instr_fetch_counter_reg[7]_i_9_n_0\
+      O => \instr_fetch_counter_reg[7]_i_2_n_0\
     );
 \instr_fetch_counter_reg_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_15\,
       Q => \^instr_fetch_counter\(0),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[10]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_13\,
       Q => \^instr_fetch_counter\(10),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[11]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_12\,
       Q => \^instr_fetch_counter\(11),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[12]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_11\,
       Q => \^instr_fetch_counter\(12),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[13]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_10\,
       Q => \^instr_fetch_counter\(13),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[14]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_9\,
       Q => \^instr_fetch_counter\(14),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[15]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_8\,
       Q => \^instr_fetch_counter\(15),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[15]_i_1\: unisim.vcomponents.CARRY8
      port map (
@@ -10782,86 +10468,79 @@ instr_fence_reg: unisim.vcomponents.FDRE
       O(2) => \instr_fetch_counter_reg_reg[15]_i_1_n_13\,
       O(1) => \instr_fetch_counter_reg_reg[15]_i_1_n_14\,
       O(0) => \instr_fetch_counter_reg_reg[15]_i_1_n_15\,
-      S(7) => \instr_fetch_counter_reg[15]_i_2_n_0\,
-      S(6) => \instr_fetch_counter_reg[15]_i_3_n_0\,
-      S(5) => \instr_fetch_counter_reg[15]_i_4_n_0\,
-      S(4) => \instr_fetch_counter_reg[15]_i_5_n_0\,
-      S(3) => \instr_fetch_counter_reg[15]_i_6_n_0\,
-      S(2) => \instr_fetch_counter_reg[15]_i_7_n_0\,
-      S(1) => \instr_fetch_counter_reg[15]_i_8_n_0\,
-      S(0) => \instr_fetch_counter_reg[15]_i_9_n_0\
+      S(7 downto 0) => \^instr_fetch_counter\(15 downto 8)
     );
 \instr_fetch_counter_reg_reg[16]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_15\,
       Q => \^instr_fetch_counter\(16),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[17]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_14\,
       Q => \^instr_fetch_counter\(17),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[18]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_13\,
       Q => \^instr_fetch_counter\(18),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[19]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_12\,
       Q => \^instr_fetch_counter\(19),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_14\,
       Q => \^instr_fetch_counter\(1),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[20]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_11\,
       Q => \^instr_fetch_counter\(20),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[21]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_10\,
       Q => \^instr_fetch_counter\(21),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[22]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_9\,
       Q => \^instr_fetch_counter\(22),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[23]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[23]_i_1_n_8\,
       Q => \^instr_fetch_counter\(23),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[23]_i_1\: unisim.vcomponents.CARRY8
      port map (
@@ -10884,86 +10563,79 @@ instr_fence_reg: unisim.vcomponents.FDRE
       O(2) => \instr_fetch_counter_reg_reg[23]_i_1_n_13\,
       O(1) => \instr_fetch_counter_reg_reg[23]_i_1_n_14\,
       O(0) => \instr_fetch_counter_reg_reg[23]_i_1_n_15\,
-      S(7) => \instr_fetch_counter_reg[23]_i_2_n_0\,
-      S(6) => \instr_fetch_counter_reg[23]_i_3_n_0\,
-      S(5) => \instr_fetch_counter_reg[23]_i_4_n_0\,
-      S(4) => \instr_fetch_counter_reg[23]_i_5_n_0\,
-      S(3) => \instr_fetch_counter_reg[23]_i_6_n_0\,
-      S(2) => \instr_fetch_counter_reg[23]_i_7_n_0\,
-      S(1) => \instr_fetch_counter_reg[23]_i_8_n_0\,
-      S(0) => \instr_fetch_counter_reg[23]_i_9_n_0\
+      S(7 downto 0) => \^instr_fetch_counter\(23 downto 16)
     );
 \instr_fetch_counter_reg_reg[24]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_15\,
       Q => \^instr_fetch_counter\(24),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[25]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_14\,
       Q => \^instr_fetch_counter\(25),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[26]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_13\,
       Q => \^instr_fetch_counter\(26),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[27]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_12\,
       Q => \^instr_fetch_counter\(27),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[28]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_11\,
       Q => \^instr_fetch_counter\(28),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[29]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_10\,
       Q => \^instr_fetch_counter\(29),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_13\,
       Q => \^instr_fetch_counter\(2),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[30]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_9\,
       Q => \^instr_fetch_counter\(30),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[31]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[31]_i_2_n_8\,
       Q => \^instr_fetch_counter\(31),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[31]_i_2\: unisim.vcomponents.CARRY8
      port map (
@@ -10986,54 +10658,47 @@ instr_fence_reg: unisim.vcomponents.FDRE
       O(2) => \instr_fetch_counter_reg_reg[31]_i_2_n_13\,
       O(1) => \instr_fetch_counter_reg_reg[31]_i_2_n_14\,
       O(0) => \instr_fetch_counter_reg_reg[31]_i_2_n_15\,
-      S(7) => \instr_fetch_counter_reg[31]_i_3_n_0\,
-      S(6) => \instr_fetch_counter_reg[31]_i_4_n_0\,
-      S(5) => \instr_fetch_counter_reg[31]_i_5_n_0\,
-      S(4) => \instr_fetch_counter_reg[31]_i_6_n_0\,
-      S(3) => \instr_fetch_counter_reg[31]_i_7_n_0\,
-      S(2) => \instr_fetch_counter_reg[31]_i_8_n_0\,
-      S(1) => \instr_fetch_counter_reg[31]_i_9_n_0\,
-      S(0) => \instr_fetch_counter_reg[31]_i_10_n_0\
+      S(7 downto 0) => \^instr_fetch_counter\(31 downto 24)
     );
 \instr_fetch_counter_reg_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_12\,
       Q => \^instr_fetch_counter\(3),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_11\,
       Q => \^instr_fetch_counter\(4),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_10\,
       Q => \^instr_fetch_counter\(5),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_9\,
       Q => \^instr_fetch_counter\(6),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[7]_i_1_n_8\,
       Q => \^instr_fetch_counter\(7),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[7]_i_1\: unisim.vcomponents.CARRY8
      port map (
@@ -11047,8 +10712,7 @@ instr_fence_reg: unisim.vcomponents.FDRE
       CO(2) => \instr_fetch_counter_reg_reg[7]_i_1_n_5\,
       CO(1) => \instr_fetch_counter_reg_reg[7]_i_1_n_6\,
       CO(0) => \instr_fetch_counter_reg_reg[7]_i_1_n_7\,
-      DI(7 downto 1) => B"0000000",
-      DI(0) => resetn,
+      DI(7 downto 0) => B"00000001",
       O(7) => \instr_fetch_counter_reg_reg[7]_i_1_n_8\,
       O(6) => \instr_fetch_counter_reg_reg[7]_i_1_n_9\,
       O(5) => \instr_fetch_counter_reg_reg[7]_i_1_n_10\,
@@ -11057,30 +10721,24 @@ instr_fence_reg: unisim.vcomponents.FDRE
       O(2) => \instr_fetch_counter_reg_reg[7]_i_1_n_13\,
       O(1) => \instr_fetch_counter_reg_reg[7]_i_1_n_14\,
       O(0) => \instr_fetch_counter_reg_reg[7]_i_1_n_15\,
-      S(7) => \instr_fetch_counter_reg[7]_i_2_n_0\,
-      S(6) => \instr_fetch_counter_reg[7]_i_3_n_0\,
-      S(5) => \instr_fetch_counter_reg[7]_i_4_n_0\,
-      S(4) => \instr_fetch_counter_reg[7]_i_5_n_0\,
-      S(3) => \instr_fetch_counter_reg[7]_i_6_n_0\,
-      S(2) => \instr_fetch_counter_reg[7]_i_7_n_0\,
-      S(1) => \instr_fetch_counter_reg[7]_i_8_n_0\,
-      S(0) => \instr_fetch_counter_reg[7]_i_9_n_0\
+      S(7 downto 1) => \^instr_fetch_counter\(7 downto 1),
+      S(0) => \instr_fetch_counter_reg[7]_i_2_n_0\
     );
 \instr_fetch_counter_reg_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_15\,
       Q => \^instr_fetch_counter\(8),
-      R => '0'
+      R => trap_i_1_n_0
     );
 \instr_fetch_counter_reg_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
-      CE => \instr_fetch_counter_reg[31]_i_1_n_0\,
+      CE => instr_fetch_counter_reg,
       D => \instr_fetch_counter_reg_reg[15]_i_1_n_14\,
       Q => \^instr_fetch_counter\(9),
-      R => '0'
+      R => trap_i_1_n_0
     );
 instr_jal_i_1: unisim.vcomponents.LUT2
     generic map(

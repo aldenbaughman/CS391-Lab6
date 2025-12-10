@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date         : Tue Dec  9 16:33:18 2025
+| Date         : Tue Dec  9 19:26:38 2025
 | Host         : cs730-test3.bu.edu running 64-bit unknown
 | Command      : report_utilization -file design_1_picorv32_axi_0_0_utilization_synth.rpt -pb design_1_picorv32_axi_0_0_utilization_synth.pb
 | Design       : design_1_picorv32_axi_0_0
@@ -32,8 +32,8 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  |  982 |     0 |          0 |    117120 |  0.84 |
-|   LUT as Logic             |  942 |     0 |          0 |    117120 |  0.80 |
+| CLB LUTs*                  |  951 |     0 |          0 |    117120 |  0.81 |
+|   LUT as Logic             |  911 |     0 |          0 |    117120 |  0.78 |
 |   LUT as Memory            |   40 |     0 |          0 |     57600 |  0.07 |
 |     LUT as Distributed RAM |   40 |     0 |            |           |       |
 |     LUT as Shift Register  |    0 |     0 |            |           |       |
@@ -174,13 +174,13 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | FDRE     |  872 |            Register |
 | LUT6     |  391 |                 CLB |
 | LUT4     |  275 |                 CLB |
-| LUT5     |  167 |                 CLB |
-| LUT2     |  139 |                 CLB |
+| LUT5     |  166 |                 CLB |
+| LUT2     |  108 |                 CLB |
 | LUT3     |  100 |                 CLB |
 | CARRY8   |   78 |                 CLB |
 | RAMD32   |   68 |                 CLB |
 | FDSE     |   20 |            Register |
-| LUT1     |   13 |                 CLB |
+| LUT1     |   14 |                 CLB |
 | RAMS32   |   12 |                 CLB |
 +----------+------+---------------------+
 

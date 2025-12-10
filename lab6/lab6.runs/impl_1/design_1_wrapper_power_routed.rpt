@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
-| Date             : Tue Dec  9 16:11:48 2025
+| Date             : Tue Dec  9 19:31:08 2025
 | Host             : cs730-test3.bu.edu running 64-bit unknown
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.012 |        4 |       --- |             --- |
+| Clocks                   |     0.013 |        4 |       --- |             --- |
 | CLB Logic                |     0.004 |     9222 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     3252 |    117120 |            2.78 |
+|   LUT as Logic           |     0.003 |     3257 |    117120 |            2.78 |
 |   Register               |    <0.001 |     4400 |    234240 |            1.88 |
 |   LUT as Distributed RAM |    <0.001 |       64 |     57600 |            0.11 |
 |   CARRY8                 |    <0.001 |       90 |     14640 |            0.61 |
 |   LUT as Shift Register  |    <0.001 |        6 |     57600 |            0.01 |
 |   Others                 |     0.000 |      466 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      146 |    117120 |            0.12 |
-| Signals                  |     0.005 |    11316 |       --- |             --- |
+| Signals                  |     0.005 |    11315 |       --- |             --- |
 | Block RAM                |     0.032 |      128 |       144 |           88.89 |
 | PS8                      |     2.415 |        1 |       --- |             --- |
 | Static Power             |     0.302 |          |           |                 |
@@ -176,8 +176,8 @@ Table of Contents
 |       inst               |     0.005 |
 |     smartconnect_0       |     0.007 |
 |       inst               |     0.007 |
-|     vio_0                |     0.006 |
-|       inst               |     0.006 |
+|     vio_0                |     0.007 |
+|       inst               |     0.007 |
 |     zynq_ultra_ps_e_0    |     2.415 |
 |       inst               |     2.415 |
 +--------------------------+-----------+
