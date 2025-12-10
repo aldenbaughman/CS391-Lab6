@@ -5,7 +5,7 @@
   /Author   (yc3146)
   /Producer (Concept Engineering GmbH)
   /Creator  (Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38)
-  /CreationDate (D:20251210132143)
+  /CreationDate (D:20251210132315)
 >>
 endobj
 2 0 obj
@@ -37,7 +37,7 @@ endobj
 endobj
 %
 % Schematic page 1
-% (user space scaling 0.319304)
+% (user space scaling 0.241043)
 %
 10 0 obj
 <<
@@ -45,8 +45,8 @@ endobj
   /Parent    3 0 R
   /Resources 5 0 R
   /Contents  11 0 R
-  /MediaBox  [0 0 792 612]
-  /Rotate    270
+  /MediaBox  [0 0 612 792]
+  /Rotate    0
 >>
 endobj
 11 0 obj
@@ -54,9 +54,9 @@ endobj
   /Length 25679
 >>
 stream
-1 0 0 1 0 127.606 cm
+1 0 0 1 0 254.271 cm
 1 0 0 1 28.8 28.8 cm
-0.319304 0 0 -0.319304 0 0 cm
+0.241043 0 0 -0.241043 0 0 cm
 1 0 0 1 0 -937 cm
 0 0 2300 937 re
 W n
@@ -2310,7 +2310,7 @@ endobj
 <<
   /Title  (axi_bram_ctrl_0 design_1_axi_bram_ctrl_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 600 227 676 268]
+  /Dest   [10 0 R /FitR 460 337 518 367]
   /Parent 24 0 R
   /Next   26 0 R
 >>
@@ -2319,7 +2319,7 @@ endobj
 <<
   /Title  (blk_mem_gen_0 design_1_blk_mem_gen_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 689 231 760 264]
+  /Dest   [10 0 R /FitR 527 339 580 365]
   /Parent 24 0 R
   /Prev   25 0 R
   /Next   27 0 R
@@ -2329,7 +2329,7 @@ endobj
 <<
   /Title  (picorv32_axi_0 design_1_picorv32_axi_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 325 301 427 437]
+  /Dest   [10 0 R /FitR 252 392 330 495]
   /Parent 24 0 R
   /Prev   26 0 R
   /Next   28 0 R
@@ -2339,7 +2339,7 @@ endobj
 <<
   /Title  (proc_sys_reset_0 design_1_proc_sys_reset_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 57 160 159 213]
+  /Dest   [10 0 R /FitR 50 286 127 326]
   /Parent 24 0 R
   /Prev   27 0 R
   /Next   29 0 R
@@ -2349,7 +2349,7 @@ endobj
 <<
   /Title  (smartconnect_0 design_1_smartconnect_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 507 231 584 277]
+  /Dest   [10 0 R /FitR 390 339 448 374]
   /Parent 24 0 R
   /Prev   28 0 R
   /Next   30 0 R
@@ -2359,7 +2359,7 @@ endobj
 <<
   /Title  (util_vector_logic_0 design_1_util_vector_logic_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 175 330 258 363]
+  /Dest   [10 0 R /FitR 139 414 202 439]
   /Parent 24 0 R
   /Prev   29 0 R
   /Next   31 0 R
@@ -2369,7 +2369,7 @@ endobj
 <<
   /Title  (vio_0 design_1_vio_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 67 298 150 389]
+  /Dest   [10 0 R /FitR 57 390 120 459]
   /Parent 24 0 R
   /Prev   30 0 R
   /Next   32 0 R
@@ -2379,7 +2379,7 @@ endobj
 <<
   /Title  (xlconstant_0 design_1_xlconstant_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 196 400 239 427]
+  /Dest   [10 0 R /FitR 155 467 187 487]
   /Parent 24 0 R
   /Prev   31 0 R
   /Next   33 0 R
@@ -2389,7 +2389,7 @@ endobj
 <<
   /Title  (zynq_ultra_ps_e_0 design_1_zynq_ultra_ps_e_0_0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 284 233 469 282]
+  /Dest   [10 0 R /FitR 221 340 361 378]
   /Parent 24 0 R
   /Prev   32 0 R
 >>
@@ -2436,7 +2436,7 @@ endobj
 <<
   /Title  (axi_bram_ctrl_0_BRAM_PORTA)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 676 251 689 251]
+  /Dest   [10 0 R /FitR 518 354 527 354]
   /Parent 36 0 R
   /Next   38 0 R
 >>
@@ -2445,7 +2445,7 @@ endobj
 <<
   /Title  (axi_bram_ctrl_0_BRAM_PORTB)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 676 244 689 244]
+  /Dest   [10 0 R /FitR 518 349 527 349]
   /Parent 36 0 R
   /Prev   37 0 R
   /Next   39 0 R
@@ -2455,7 +2455,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_b_type_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 34 342 492 453]
+  /Dest   [10 0 R /FitR 32 423 379 507]
   /Parent 36 0 R
   /Prev   38 0 R
   /Next   40 0 R
@@ -2465,7 +2465,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_i_type_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 40 355 489 450]
+  /Dest   [10 0 R /FitR 37 433 376 504]
   /Parent 36 0 R
   /Prev   39 0 R
   /Next   41 0 R
@@ -2475,7 +2475,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_instr_fetch_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 50 291 486 370]
+  /Dest   [10 0 R /FitR 44 385 374 444]
   /Parent 36 0 R
   /Prev   40 0 R
   /Next   42 0 R
@@ -2485,7 +2485,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_j_type_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 43 330 479 446]
+  /Dest   [10 0 R /FitR 40 414 369 502]
   /Parent 36 0 R
   /Prev   41 0 R
   /Next   43 0 R
@@ -2495,7 +2495,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_ldmem_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 43 288 476 316]
+  /Dest   [10 0 R /FitR 40 382 366 403]
   /Parent 36 0 R
   /Prev   42 0 R
   /Next   44 0 R
@@ -2505,7 +2505,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_mem_axi)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 426 256 509 424]
+  /Dest   [10 0 R /FitR 329 358 391 485]
   /Parent 36 0 R
   /Prev   43 0 R
   /Next   45 0 R
@@ -2515,7 +2515,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_r_type_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 50 362 476 443]
+  /Dest   [10 0 R /FitR 44 438 366 500]
   /Parent 36 0 R
   /Prev   44 0 R
   /Next   46 0 R
@@ -2525,7 +2525,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_s_type_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 47 294 489 395]
+  /Dest   [10 0 R /FitR 42 387 376 463]
   /Parent 36 0 R
   /Prev   45 0 R
   /Next   47 0 R
@@ -2535,7 +2535,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_stmem_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 40 285 483 322]
+  /Dest   [10 0 R /FitR 37 380 371 408]
   /Parent 36 0 R
   /Prev   46 0 R
   /Next   48 0 R
@@ -2545,7 +2545,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_trap)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 38 228 495 417]
+  /Dest   [10 0 R /FitR 35 337 380 480]
   /Parent 36 0 R
   /Prev   47 0 R
   /Next   49 0 R
@@ -2555,7 +2555,7 @@ endobj
 <<
   /Title  (picorv32_axi_0_u_type_counter)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 34 224 492 341]
+  /Dest   [10 0 R /FitR 32 334 379 422]
   /Parent 36 0 R
   /Prev   48 0 R
   /Next   50 0 R
@@ -2565,7 +2565,7 @@ endobj
 <<
   /Title  (proc_sys_reset_0_peripheral_reset)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 158 173 601 351]
+  /Dest   [10 0 R /FitR 126 296 460 430]
   /Parent 36 0 R
   /Prev   49 0 R
   /Next   51 0 R
@@ -2575,7 +2575,7 @@ endobj
 <<
   /Title  (smartconnect_0_M00_AXI)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 584 254 600 254]
+  /Dest   [10 0 R /FitR 448 357 460 357]
   /Parent 36 0 R
   /Prev   50 0 R
   /Next   52 0 R
@@ -2585,7 +2585,7 @@ endobj
 <<
   /Title  (util_vector_logic_0_Res)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 257 346 326 383]
+  /Dest   [10 0 R /FitR 201 426 253 454]
   /Parent 36 0 R
   /Prev   51 0 R
   /Next   53 0 R
@@ -2595,7 +2595,7 @@ endobj
 <<
   /Title  (vio_0_probe_out0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 150 343 175 343]
+  /Dest   [10 0 R /FitR 120 424 139 424]
   /Parent 36 0 R
   /Prev   52 0 R
   /Next   54 0 R
@@ -2605,7 +2605,7 @@ endobj
 <<
   /Title  (xlconstant_0_dout)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 238 349 326 415]
+  /Dest   [10 0 R /FitR 187 428 253 478]
   /Parent 36 0 R
   /Prev   53 0 R
   /Next   55 0 R
@@ -2615,7 +2615,7 @@ endobj
 <<
   /Title  (zynq_ultra_ps_e_0_M_AXI_HPM0_LPD)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 469 264 507 264]
+  /Dest   [10 0 R /FitR 361 364 390 364]
   /Parent 36 0 R
   /Prev   54 0 R
   /Next   56 0 R
@@ -2625,7 +2625,7 @@ endobj
 <<
   /Title  (zynq_ultra_ps_e_0_pl_clk0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 31 199 600 388]
+  /Dest   [10 0 R /FitR 30 315 460 458]
   /Parent 36 0 R
   /Prev   55 0 R
   /Next   57 0 R
@@ -2635,7 +2635,7 @@ endobj
 <<
   /Title  (zynq_ultra_ps_e_0_pl_resetn0)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 47 193 479 257]
+  /Dest   [10 0 R /FitR 43 311 368 359]
   /Parent 36 0 R
   /Prev   56 0 R
 >>
@@ -3759,73 +3759,73 @@ xref
 0000000000 65535 f 
 0000000009 00000 n 
 0000000215 00000 n 
-0000026582 00000 n 
+0000026580 00000 n 
 0000000365 00000 n 
 0000000492 00000 n 
-0000026701 00000 n 
-0000092983 00000 n 
-0000033325 00000 n 
-0000033346 00000 n 
+0000026699 00000 n 
+0000092981 00000 n 
+0000033323 00000 n 
+0000033344 00000 n 
 0000000705 00000 n 
-0000000848 00000 n 
-0000034619 00000 n 
-0000040940 00000 n 
-0000043886 00000 n 
-0000044726 00000 n 
-0000052899 00000 n 
-0000082170 00000 n 
-0000083762 00000 n 
-0000089641 00000 n 
-0000090386 00000 n 
-0000091179 00000 n 
-0000092346 00000 n 
-0000033164 00000 n 
-0000028648 00000 n 
-0000026967 00000 n 
-0000027143 00000 n 
-0000027332 00000 n 
-0000027523 00000 n 
-0000027717 00000 n 
-0000027908 00000 n 
-0000028109 00000 n 
-0000028281 00000 n 
-0000028468 00000 n 
-0000028808 00000 n 
-0000028979 00000 n 
-0000032832 00000 n 
-0000029154 00000 n 
-0000029314 00000 n 
-0000029491 00000 n 
-0000029670 00000 n 
-0000029849 00000 n 
-0000030033 00000 n 
-0000030212 00000 n 
-0000030390 00000 n 
-0000030563 00000 n 
-0000030742 00000 n 
-0000030921 00000 n 
-0000031099 00000 n 
-0000031268 00000 n 
-0000031447 00000 n 
-0000031631 00000 n 
-0000031804 00000 n 
-0000031978 00000 n 
-0000032145 00000 n 
-0000032313 00000 n 
-0000032496 00000 n 
-0000032671 00000 n 
-0000033005 00000 n 
-0000033522 00000 n 
-0000040216 00000 n 
-0000043584 00000 n 
-0000044366 00000 n 
-0000045273 00000 n 
-0000081847 00000 n 
-0000082691 00000 n 
-0000089328 00000 n 
-0000090096 00000 n 
-0000090784 00000 n 
-0000091952 00000 n 
+0000000846 00000 n 
+0000034617 00000 n 
+0000040938 00000 n 
+0000043884 00000 n 
+0000044724 00000 n 
+0000052897 00000 n 
+0000082168 00000 n 
+0000083760 00000 n 
+0000089639 00000 n 
+0000090384 00000 n 
+0000091177 00000 n 
+0000092344 00000 n 
+0000033162 00000 n 
+0000028646 00000 n 
+0000026965 00000 n 
+0000027141 00000 n 
+0000027330 00000 n 
+0000027521 00000 n 
+0000027715 00000 n 
+0000027906 00000 n 
+0000028107 00000 n 
+0000028279 00000 n 
+0000028466 00000 n 
+0000028806 00000 n 
+0000028977 00000 n 
+0000032830 00000 n 
+0000029152 00000 n 
+0000029312 00000 n 
+0000029489 00000 n 
+0000029668 00000 n 
+0000029847 00000 n 
+0000030031 00000 n 
+0000030210 00000 n 
+0000030388 00000 n 
+0000030561 00000 n 
+0000030740 00000 n 
+0000030919 00000 n 
+0000031097 00000 n 
+0000031266 00000 n 
+0000031445 00000 n 
+0000031629 00000 n 
+0000031802 00000 n 
+0000031976 00000 n 
+0000032143 00000 n 
+0000032311 00000 n 
+0000032494 00000 n 
+0000032669 00000 n 
+0000033003 00000 n 
+0000033520 00000 n 
+0000040214 00000 n 
+0000043582 00000 n 
+0000044364 00000 n 
+0000045271 00000 n 
+0000081845 00000 n 
+0000082689 00000 n 
+0000089326 00000 n 
+0000090094 00000 n 
+0000090782 00000 n 
+0000091950 00000 n 
 trailer
 <<
   /Size 70
@@ -3833,5 +3833,5 @@ trailer
   /Root 2 0 R
 >>
 startxref
-93065
+93063
 %%EOF
